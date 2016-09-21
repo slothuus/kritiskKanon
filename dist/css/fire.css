@@ -1,0 +1,88 @@
+* {
+	box-sizing:border-box;
+	transition: all 0.5s ease 0s;
+}
+
+.max-w {
+	max-width: 800px;
+	height: 600px;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	border: 2px solid #000;
+	transition: all 0.5s ease 0s;
+}
+
+.box1 {
+	/*background-image: url(bottom.gif);*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	bottom: -20px;
+	height: 10px;
+	position: absolute;
+	-webkit-transition: all 40s ease;
+	-moz-transition: all 40s ease;
+	-ms-transition: all 40s ease;
+	-o-transition: all 40s ease;
+	transition: all 40s ease;
+	width: 100%;
+}
+.box2 {
+	/*background-image: url(top1.gif);*/
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	top: -20px;
+	height: 10px;
+	position: absolute;
+	-webkit-transition: all 40s ease;
+	-moz-transition: all 40s ease;
+	-ms-transition: all 40s ease;
+	-o-transition: all 40s ease;
+	transition: all 40s ease;
+
+	width: 100%;
+}
+.box3 {
+	background-image: url(right.gif);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	right: -20px;
+	height: 100%;
+	position: absolute;
+	-webkit-transition: all 40s ease;
+	-moz-transition: all 40s ease;
+	-ms-transition: all 40s ease;
+	-o-transition: all 40s ease;
+	transition: all 40s ease;
+	width: 10px;
+}
+.box4 {
+	background-image: url(lefth.gif);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	left: -20px;
+	height: 100%;
+	position: absolute;
+	-webkit-transition: all 40s ease;
+	-moz-transition: all 40s ease;
+	-ms-transition: all 40s ease;
+	-o-transition: all 40s ease;
+	transition: all 40s ease;
+	width: 10px;
+}
+.show.box1,
+.show.box2,
+.show.box3,
+.show.box4 {
+	height: 100%;
+	width: 100%;
+	opacity: 0.7;
+}
+.show img {
+	width: 100%;
+	height: 100%;
+}
+.box2 img {
+  transform: rotate(180deg);
+}
